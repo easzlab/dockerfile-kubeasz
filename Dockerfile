@@ -5,7 +5,7 @@
 
 FROM easzlab/ansible:2.10.6-lite
 
-ENV KUBEASZ_VER=3.3.2
+ARG KUBEASZ_VER=3.3.2
 
 RUN set -x \
       # Downloading kubeasz
