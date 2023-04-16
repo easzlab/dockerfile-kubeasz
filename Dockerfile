@@ -3,7 +3,7 @@
 # @author:  gjmzj
 # @repo:     https://github.com/easzlab/kubeasz
 
-FROM easzlab/ansible:2.10.6-lite
+FROM easzlab/ansible:2.14-lite
 
 ARG KUBEASZ_VER=3.3.2
 
