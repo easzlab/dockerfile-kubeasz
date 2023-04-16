@@ -1,11 +1,12 @@
 # Dockerfile for building images to run kubeasz in a container
-#
 # @author:  gjmzj
 # @repo:     https://github.com/easzlab/kubeasz
 
 FROM easzlab/ansible:2.14.4-lite
 
 ARG KUBEASZ_VER=3.3.2
+
+ENV TZ="Asia/Shanghai"
 
 RUN set -x \
       # Downloading kubeasz
