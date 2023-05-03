@@ -17,5 +17,7 @@ RUN set -x \
     && ln -s -f /etc/kubeasz/ezdown /usr/bin/ezdown \
     && ln -s -f /usr/local/bin/python3.11 /usr/bin/python \
     && ln -s -f /usr/local/bin/python3.11 /usr/bin/python3 \
+    && mkdir -p /usr/libexec \
+    && ln -s /usr/bin/python3 /usr/libexec/platform-python \
       # Cleaning
     && rm -rf ./"$KUBEASZ_VER".tar.gz
