@@ -21,3 +21,5 @@ RUN set -x \
     && ln -s /usr/bin/python3 /usr/libexec/platform-python \
       # Cleaning
     && rm -rf ./"$KUBEASZ_VER".tar.gz
+RUN apt add sshpass \
+    && apt cache clean 
