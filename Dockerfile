@@ -4,7 +4,8 @@
 
 FROM easzlab/ansible:2.14.4-lite
 
-ARG KUBEASZ_VER=3.3.2
+# KUBEASZ_VER will be set by build-args
+#ARG KUBEASZ_VER=3.3.2
 
 ENV TZ="Asia/Shanghai"
 
