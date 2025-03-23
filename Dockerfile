@@ -10,7 +10,7 @@ ARG KUBEASZ_VER=
 ENV TZ="Asia/Shanghai"
 
 RUN set -x \
-      # Downloading kubeasz
+    # Downloading kubeasz
     && wget https://github.com/easzlab/kubeasz/archive/refs/tags/"$KUBEASZ_VER".tar.gz \
     && tar zxf ./"$KUBEASZ_VER".tar.gz \
     && mv kubeasz-"$KUBEASZ_VER" /etc/kubeasz \
@@ -20,5 +20,5 @@ RUN set -x \
     && ln -s -f /usr/local/bin/python3.11 /usr/bin/python3 \
     && mkdir -p /usr/libexec \
     && ln -s /usr/bin/python3 /usr/libexec/platform-python \
-      # Cleaning
+    # Cleaning
     && rm -rf ./"$KUBEASZ_VER".tar.gz
